@@ -1,0 +1,50 @@
+@use "../../styles/mixins/colors";
+
+.sidebar {
+    background-color: #343434;
+    box-sizing: border-box;
+    color: #ffff;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+    left: 0;
+    max-width: 300px;
+    overflow-x: hidden;
+    padding: 40px;
+    position: sticky;
+    top: 0;
+    transition: 0.5s;
+    width: 100%;
+    z-index: 1;
+
+    .items {
+        all: unset;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        list-style-type: none;
+
+        .item {
+            padding: 10px 20px;
+
+            &:hover {
+                background-color: colors.$primary_hover_color;
+                border-radius: 5px;
+                color: #343434;
+
+                a {
+                    color: #343434;
+                }
+            }
+
+            a {
+                color: colors.$primary_hover_color;
+                display: flex;
+                font-weight: 500;
+                gap: 10px;
+                text-decoration: none;
+            }
+        }
+    }
+}

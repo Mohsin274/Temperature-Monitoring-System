@@ -1,0 +1,50 @@
+@use "../../styles/mixins/colors";
+
+.button {
+    all: unset;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: 0.3s;
+    font-weight: 500;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+    &.primary {
+        border: 2px solid colors.$primary_color;
+        background-color: colors.$primary_color;
+        color: #d2cffd;
+    }
+
+    &.secondary {
+        border: 2px solid colors.$primary_color;
+        background-color: #00000000;
+        color: #343434;
+    }
+
+    &.tertiary {
+        border: 2px solid #00000000;
+        background-color: #4239e700;
+        color: #343434;
+    }
+
+    &.primary,
+    &.secondary,
+    &.tertiary {
+        &:hover {
+            background-color: colors.$primary_hover_color;
+            color: #343434;
+        }
+    }
+
+    &.full-width {
+        width: 100%;
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
+}

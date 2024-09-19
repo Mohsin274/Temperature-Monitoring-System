@@ -1,0 +1,30 @@
+.card {
+  display: flex;
+  gap: 10px;
+  border: 1px solid #4239e7;
+  border-radius: 5px;
+  padding: 30px;
+}
+.card .temp {
+  margin: 0;
+  font-size: 80px;
+  line-height: 0.7;
+}
+.card div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card div .unit {
+  margin: 0;
+  font-size: 30px;
+  line-height: 0.7;
+}
+.card div .label {
+  margin: 0;
+  font-size: 15px;
+  background-color: #4239e7;
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 3px;
+}/*# sourceMappingURL=Card.css.map */

@@ -1,0 +1,10 @@
+.temperature-graph {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .card-flex {
+        display: flex;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,9 @@
+.temperature-graph {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.temperature-graph .card-flex {
+  display: flex;
+  gap: 20px;
+}/*# sourceMappingURL=TemperatureGraph.css.map */

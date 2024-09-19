@@ -1,0 +1,36 @@
+@use "../../styles/mixins/colors";
+
+.card {
+    display: flex;
+    gap: 10px;
+    border: 1px solid colors.$primary_color;
+    border-radius: 5px;
+    padding: 30px;
+
+    .temp {
+        margin: 0;
+        font-size: 80px;
+        line-height: 0.7;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+
+        .unit {
+            margin: 0;
+            font-size: 30px;
+            line-height: 0.7;
+        }
+
+        .label {
+            margin: 0;
+            font-size: 15px;
+            background-color: colors.$primary_color;
+            color: #ffffff;
+            padding: 5px;
+            border-radius: 3px;
+        }
+    }
+}
