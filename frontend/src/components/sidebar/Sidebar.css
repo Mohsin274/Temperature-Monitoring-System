@@ -1,5 +1,6 @@
 .sidebar {
-  background-color: #343434;
+  background-color: #2a2a2a;
+  box-shadow: 3px 0 12px rgba(0, 0, 0, 0.062745098);
   box-sizing: border-box;
   color: white;
   display: flex;
@@ -27,7 +28,7 @@
   padding: 10px 20px;
 }
 .sidebar .items .item:hover {
-  background-color: #d2cffd;
+  background-color: #f7cbc3;
   border-radius: 5px;
   color: #343434;
 }
@@ -35,7 +36,7 @@
   color: #343434;
 }
 .sidebar .items .item a {
-  color: #d2cffd;
+  color: #f7cbc3;
   display: flex;
   font-weight: 500;
   gap: 10px;

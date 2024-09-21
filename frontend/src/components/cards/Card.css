@@ -1,14 +1,15 @@
 .card {
+  background-color: #3f3f3f;
+  border-radius: 5px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.062745098);
   display: flex;
   gap: 10px;
-  border: 1px solid #4239e7;
-  border-radius: 5px;
   padding: 30px;
 }
 .card .temp {
-  margin: 0;
   font-size: 80px;
   line-height: 0.7;
+  margin: 0;
 }
 .card div {
   display: flex;
@@ -16,15 +17,15 @@
   gap: 10px;
 }
 .card div .unit {
-  margin: 0;
   font-size: 30px;
   line-height: 0.7;
+  margin: 0;
 }
 .card div .label {
-  margin: 0;
-  font-size: 15px;
-  background-color: #4239e7;
-  color: #ffffff;
-  padding: 5px;
+  background-color: #f6a192;
   border-radius: 3px;
+  color: #000000;
+  font-size: 15px;
+  margin: 0;
+  padding: 5px;
 }/*# sourceMappingURL=Card.css.map */

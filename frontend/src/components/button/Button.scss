@@ -2,32 +2,32 @@
 
 .button {
     all: unset;
+    align-items: center;
+    border-radius: 5px;
+    color: #000000;
     cursor: pointer;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    transition: 0.3s;
     font-weight: 500;
-    border-radius: 5px;
+    gap: 5px;
+    justify-content: center;
     padding: 10px 20px;
+    transition: 0.3s;
 
     &.primary {
-        border: 2px solid colors.$primary_color;
         background-color: colors.$primary_color;
-        color: #d2cffd;
+        border: 2px solid colors.$primary_color;
     }
 
     &.secondary {
-        border: 2px solid colors.$primary_color;
         background-color: #00000000;
-        color: #343434;
+        border: 2px solid colors.$primary_color;
+        color: #dedede;
     }
 
     &.tertiary {
-        border: 2px solid #00000000;
         background-color: #4239e700;
-        color: #343434;
+        border: 2px solid #00000000;
+        color: #dedede;
     }
 
     &.primary,

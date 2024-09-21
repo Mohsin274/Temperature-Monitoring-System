@@ -11,8 +11,8 @@ import {
     AreaChart,
 } from "recharts";
 import "./TemperatureGraph.css";
-import CustomTooltip from "../tooltip/Toottip";
-import Card from "../temperature-card/Card";
+import CustomTooltip from "../tooltip/Tooltip";
+import Card from "../cards/Card";
 import { calculateStats } from "../../utils/temperatureUtils";
 import { Temperature } from "../../types/temperature";
 
@@ -34,7 +34,7 @@ const TemperatureGraph: FC = () => {
 
     useEffect(() => {
         fetchData();
-        const interval = setInterval(fetchData, 2000); // Fetch data every 2 seconds
+        const interval = setInterval(fetchData, 2000); // fetch data every 2 seconds
         return () => clearInterval(interval);
     }, []);
 
@@ -44,8 +44,8 @@ const TemperatureGraph: FC = () => {
                 <AreaChart data={temperatures}>
                     <defs>
                         <linearGradient id="gradient" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="5%" stopColor="#4239e7" stopOpacity={0.8} />
-                            <stop offset="95%" stopColor="#4239e7" stopOpacity={0} />
+                            <stop offset="5%" stopColor="#f6a192" stopOpacity={0.8} />
+                            <stop offset="95%" stopColor="#f6a192" stopOpacity={0} />
                         </linearGradient>
                     </defs>
                     <CartesianGrid strokeDasharray="3 3" />
@@ -64,11 +64,11 @@ const TemperatureGraph: FC = () => {
                     <Area
                         type="monotone"
                         dataKey="value"
-                        stroke="#4239e7"
+                        stroke="#f6a192"
                         fillOpacity={1}
                         fill="url(#gradient)"
                     />
-                    <Line type="monotone" dataKey="value" stroke="#4239e7" dot={false} />
+                    <Line type="monotone" dataKey="value" stroke="#f6a192" dot={false} />
                 </AreaChart>
             </ResponsiveContainer>
             <div className="card-flex">

@@ -1,35 +1,35 @@
 @use "../../styles/mixins/colors";
 
 .tooltip {
-    display: flex;
-    gap: 10px;
-    border: 1px solid colors.$primary_color;
-    padding: 10px 20px;
+    backdrop-filter: blur(8px);
+    background-color: #30303042;
     border-radius: 5px;
-    background-color: #b0aee742;
-    backdrop-filter: blur(5px);
+    box-shadow: 0 5px 15px #0000003a;
+    display: flex;
+    gap: 5px;
+    padding: 10px 20px;
 
     .info {
         display: flex;
         flex-direction: column;
-        gap: 5px;
         font-size: 14px;
+        gap: 5px;
 
         .unit {
-            margin: 0;
             font-size: 30px;
+            margin: 0;
         }
 
         .timestamp {
-            margin: 0;
             font-size: 15px;
+            margin: 0;
         }
     }
 
     .temp {
-        margin: 0;
+        color: lighten(colors.$primary_color, 15%);
         font-size: 70px;
-        color: colors.$primary_color;
         line-height: 0.9;
+        margin: 0;
     }
 }

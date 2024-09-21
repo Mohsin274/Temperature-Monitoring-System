@@ -1,32 +1,32 @@
 .button {
   all: unset;
+  align-items: center;
+  border-radius: 5px;
+  color: #000000;
   cursor: pointer;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  transition: 0.3s;
   font-weight: 500;
-  border-radius: 5px;
+  gap: 5px;
+  justify-content: center;
   padding: 10px 20px;
+  transition: 0.3s;
 }
 .button.primary {
-  border: 2px solid #4239e7;
-  background-color: #4239e7;
-  color: #d2cffd;
+  background-color: #f6a192;
+  border: 2px solid #f6a192;
 }
 .button.secondary {
-  border: 2px solid #4239e7;
   background-color: rgba(0, 0, 0, 0);
-  color: #343434;
+  border: 2px solid #f6a192;
+  color: #dedede;
 }
 .button.tertiary {
-  border: 2px solid rgba(0, 0, 0, 0);
   background-color: rgba(66, 57, 231, 0);
-  color: #343434;
+  border: 2px solid rgba(0, 0, 0, 0);
+  color: #dedede;
 }
 .button.primary:hover, .button.secondary:hover, .button.tertiary:hover {
-  background-color: #d2cffd;
+  background-color: #f7cbc3;
   color: #343434;
 }
 .button.full-width {

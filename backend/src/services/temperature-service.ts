@@ -1,5 +1,6 @@
 import { PrismaClient } from '@prisma/client'
 
+// initialize Prisma
 const prisma = new PrismaClient()
 
 // fetch temperatures from the last minute
