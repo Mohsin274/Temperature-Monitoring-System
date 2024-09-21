@@ -41,4 +41,7 @@
   font-weight: 500;
   gap: 10px;
   text-decoration: none;
+}
+.sidebar .items .item a svg {
+  margin: auto 0;
 }/*# sourceMappingURL=Sidebar.css.map */
